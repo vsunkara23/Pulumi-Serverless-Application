@@ -10,7 +10,7 @@ The application was initialized with a 'Dev' stack using the default Pulumi proj
 
 The Lambda function was tested by mocking an S3 event with the following JSON structure:
 
-/LambdaFuncTest/LambdaEventTestJSON.txt
+LambdaEventTestJSON.txt (/LambdaFuncTest/LambdaEventTestJSON.txt)
 
 
 
