@@ -7,8 +7,6 @@ dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table(os.environ['TABLE_NAME'])
 
-s3_client = boto3.client('s3')
-
 
 
 def handler(event, context):
