@@ -24,11 +24,12 @@ CloudWatch Logs
 Files were uploaded to the S3 bucket to trigger the Lambda function and verify its operation:
 
 1) city.jpg
-2) hello.txt
 
 CloudWatch Logs
 ![pictureUploadTest](https://github.com/vsunkara23/Pulumi-Serverless-Application/assets/43553784/28b5c06b-f455-40a0-a130-0ff33d7925c4)
 
+
+2) hello.txt
 ![textfileUploadTest](https://github.com/vsunkara23/Pulumi-Serverless-Application/assets/43553784/f77388a8-1b43-4e0c-b13e-3d8b6f7c7901)
 
 
