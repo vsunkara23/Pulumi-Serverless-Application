@@ -11,7 +11,46 @@ The application was initialized with a 'Dev' stack using the default Pulumi proj
 The Lambda function was tested by mocking an S3 event with the following JSON structure:
 
 JSON
-[LambdaeventTestJSON.txt](https://github.com/vsunkara23/Pulumi-Serverless-Application/files/14580231/LambdaeventTestJSON.txt)
+[LambdaeventTestJSON.txt](https://github.com/vsunkara23/Pulumi-Serverless-Application/files/14580315/LambdaeventTestJSON.txt){
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2024-03-12T12:34:56.789Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWSPrincipalID"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "127.0.0.1"
+      },
+      "responseElements": {
+        "x-amz-request-id": "UniqueRequestID",
+        "x-amz-id-2": "AmazonS3GeneratedID"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "testConfigRule",
+        "bucket": {
+          "name": "your-bucket-name",
+          "ownerIdentity": {
+            "principalId": "AWSPrincipalID"
+          },
+          "arn": "arn:aws:s3:::your-bucket-name"
+        },
+        "object": {
+          "key": "your-uploaded-file.jpg",
+          "size": 1024,
+          "eTag": "eTag",
+          "sequencer": "sequence"
+        }
+      }
+    }
+  ]
+}
+
+
 
 CloudWatch Logs
 ![lambdaFunctionTest](https://github.com/vsunkara23/Pulumi-Serverless-Application/assets/43553784/95d4b2d7-b281-48ec-91f9-e9059328967b)
