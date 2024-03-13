@@ -5,6 +5,12 @@ The application was initialized with a 'Dev' stack using the default Pulumi proj
 
 <br>
 
+__main__.py defines infrastructure as code to provision and configure resources on AWS using a Python based Pulumi Program.
+
+function/handler.py is a python script used to process events triggered by S3 and writes to dynamodb.
+
+<br>
+
 ### Testing:
 
 <br>
